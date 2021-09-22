@@ -4,8 +4,14 @@
 
 extern Engine::Application* Engine::CreateApplication();
 
-int main(int argc, char** argv)
+int32_t main(int argc, char** argv)
 {
+	// TEST
+	Engine::Log::Init();
+	EG_CORE_WARN("Log initialized successfully.");
+	int32_t a = 5;
+	EG_INFO("Welcome to Engine Var={0}", a);
+
 	// Creating application
 	auto application = Engine::CreateApplication();
 
