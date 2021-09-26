@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Engine
 {
 	class ENGINE_API KeyEvent : public Event
@@ -11,7 +9,7 @@ namespace Engine
 	public:
 		inline int32_t GetKeyCode() const { return m_KeyCode; }
 
-		EVENT_CLASS_CATEGORY(EventCtegoryKeyboard | EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 
 	protected:
 		KeyEvent(int32_t keyCode)
