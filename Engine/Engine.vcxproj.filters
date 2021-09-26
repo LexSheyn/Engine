@@ -6,7 +6,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\ApplicationEvent.h" />
+    <ClInclude Include="src\Engine\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\Engine\Application.h">
       <Filter>Engine</Filter>
@@ -20,9 +20,9 @@
     <ClInclude Include="src\Engine\Log.h">
       <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Event.h" />
-    <ClInclude Include="src\KeyEvent.h" />
-    <ClInclude Include="src\MouseEvents.h" />
+    <ClInclude Include="src\Engine\Events\Event.h" />
+    <ClInclude Include="src\Engine\Events\KeyEvent.h" />
+    <ClInclude Include="src\Engine\Events\MouseEvents.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Engine\Application.cpp">
